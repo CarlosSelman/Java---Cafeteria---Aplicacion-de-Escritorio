@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SubReportePresupuesto" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cf5fa028-9c73-4623-ae48-0360499670aa">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codEmpresa" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[call sp_ListarSubReportePresupuestoFinal($P{codEmpresa})]]>
+	</queryString>
+	<field name="codigoEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoPresupuesto" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaSolicitud" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cantidadPresupuesto" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="0" width="429" height="31" uuid="cbdc0c5a-9b58-432b-a85e-1857df857190"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="13" y="5" width="144" height="20" forecolor="#FFFFFF" uuid="a05eae3a-cbc7-4019-b2df-e00101b980fa"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de la Solicitud]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="5" width="243" height="20" forecolor="#FFFFFF" uuid="8bd8b48a-fa07-4a03-9c57-053d978edc50"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cantidad del Presupuesto]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="25" width="429" height="2" uuid="80cdc70f-c87d-46e2-a67a-9faebdcab79d"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="13" y="5" width="144" height="20" uuid="248b12fd-05e0-4874-a9a7-5564f94f8298"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaSolicitud}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="182" y="5" width="243" height="20" uuid="ac7dd777-67a8-438a-a263-e20ac9b4cfdd"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cantidadPresupuesto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

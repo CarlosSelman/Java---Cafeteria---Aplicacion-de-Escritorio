@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.carlosselman.controller.ServicioshasPlatosController">
+   <children>
+      <ImageView fitHeight="61.0" fitWidth="70.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Logo%20Tony's%20Kinal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="95.0" layoutX="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="341.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="98.0" layoutX="531.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="95.0" layoutX="558.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="106.0" layoutY="-7.0" prefHeight="75.0" prefWidth="406.0" text="Servicios_has_Platos" textFill="#ffe7e7">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="61.0" fitWidth="70.0" layoutX="591.0" onMouseClicked="#ventanaPlato" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Platos.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="70.0" layoutX="527.0" onMouseClicked="#ventanaServicio" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Servicio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="95.0" layoutX="-11.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="84.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="179.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="274.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="368.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="463.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="95.0" layoutX="558.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="60.0" prefHeight="280.0" prefWidth="653.0" style="-fx-background-color: #DEB887;">
+         <children>
+            <ComboBox fx:id="cmbCodigoServicio" layoutX="177.0" layoutY="33.0" prefHeight="30.0" prefWidth="150.0" />
+            <Label layoutX="57.0" layoutY="38.0" text="Código Servicio">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbCodigoPlato" layoutX="177.0" layoutY="87.0" prefHeight="30.0" prefWidth="150.0" />
+            <Label layoutX="74.0" layoutY="92.0" text="Código Plato">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblServicioshasPlatos" layoutX="353.0" layoutY="33.0" onInputMethodTextChanged="#seleccionarElementos" onKeyReleased="#seleccionarElementos" onMouseClicked="#seleccionarElementos" prefHeight="219.0" prefWidth="276.0">
+              <columns>
+                <TableColumn fx:id="colCodigoServicio" prefWidth="129.0" text="Código Servicio" />
+                <TableColumn fx:id="colCodigoPlato" prefWidth="146.0" text="Código Plato" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

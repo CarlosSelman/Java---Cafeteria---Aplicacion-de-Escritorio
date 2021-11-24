@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportePresupuesto" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ed700032-e7ca-4700-8b9f-ec069e1ae4e7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codEmpresa" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\report\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[call sp_ListarReportePresupuestoFinal($P{codEmpresa})]]>
+	</queryString>
+	<field name="codigoEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoServicio" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaServicio" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipoServicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="horaServicio" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lugarServicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefonoContacto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="96" splitType="Stretch">
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="15" width="752" height="2" uuid="4266d96d-f3e9-4c98-8a2c-4b0df3e8fdee"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="79" width="572" height="2" uuid="4fcdee92-4f88-4f1d-8600-30f57f6e6f03"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="15" width="441" height="64" uuid="0cf46a52-ad75-4421-9d19-a21235a2d031"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="96" y="29" width="125" height="37" forecolor="#FFFFFF" uuid="15b8059b-410a-454d-9742-9620bb0eb073"/>
+				<textElement verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tony's Kinal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="2" width="752" height="13" forecolor="#000000" backcolor="#FFCC66" uuid="8fab4e81-3511-47b1-be2e-ceeb00b29789"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="94" width="572" height="2" uuid="ed8a7301-2905-459d-bf0e-a4873852b2ed"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="0" width="752" height="2" uuid="ccb2044c-977c-4f52-8137-892e384def07"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="15" width="572" height="2" uuid="c869ea28-cd98-48ad-9537-bdcd7df3e2bd"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="0" width="572" height="2" uuid="c616ba08-fc5f-4921-9f5f-63dd890b6af4"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="441" y="15" width="311" height="64" uuid="94a35f57-fff4-40c6-8676-898329349db0"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="94" width="572" height="2" uuid="11b4ef55-b02a-404f-8a50-9c3af8c9e4cb"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="79" width="572" height="2" uuid="1e0d1f85-a49a-47ee-88fd-71a082ee1aca"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="81" width="752" height="13" forecolor="#000000" backcolor="#FFCC66" uuid="b88eb005-cd6f-4122-994d-3ddf53f99f34"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="15" width="77" height="66" uuid="a681c930-a3f9-456b-aeb0-7afa340ce88c"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Logo Tony's Kinal.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="688" y="17" width="76" height="64" uuid="f0c03ecf-7301-4ca8-98b4-b43c6bfac082"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Presupuesto.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="175" splitType="Stretch">
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="9" width="752" height="2" uuid="d246d355-248c-4cdb-ad41-e9c8bcc249dc"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="9" width="572" height="2" uuid="d80b1d0d-828e-43e4-847c-65b7de71d910"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="36" width="572" height="2" uuid="e5011522-261a-4e5b-9535-aa6dc6dfe5f0"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="11" width="572" height="25" forecolor="#000000" backcolor="#FFCC66" uuid="5e757a83-817f-4f61-b1d3-7dcc63184042"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="11" width="752" height="25" forecolor="#000000" backcolor="#FFCC66" uuid="85ae912f-4665-4586-aada-3f0bf6cea2a1"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte de Presupuesto]]></text>
+			</staticText>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="36" width="572" height="2" uuid="bd7002fe-458b-43cf-a9e9-9fd34985fcb7"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="48" width="161" height="23" uuid="e07a6d03-8d6c-4f56-9bfa-ce6c6ef00e7d"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="46" width="572" height="2" uuid="d3b7e776-5422-4d7f-8a02-4f246bbe4b3d"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="46" width="572" height="2" uuid="2b19a671-7071-4672-a4c3-ad06c4a04d2e"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="69" width="572" height="2" uuid="3ba6a53f-6aaa-493b-b04e-b8cdb2173578"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="69" width="572" height="2" uuid="2bdaee7d-c729-4df3-bc68-c56b52a3c453"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="71" width="161" height="23" uuid="8f942e80-0671-4998-8bf9-e8589db51675"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="94" width="572" height="2" uuid="0f642b40-896d-4a42-99c0-4a0b4a036678"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="94" width="572" height="2" uuid="00f88617-6fcd-4375-9ce1-2e8e57932da3"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="582" y="46" width="170" height="23" uuid="fd144e12-1644-41f6-b524-1d4490e25ff2"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="750" y="71" width="2" height="23" uuid="71d82331-1118-4e89-93c6-ab08ee5f33f7"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="582" y="71" width="2" height="23" uuid="bd3dbd68-5393-43d7-b4ad-4c2e1fa55541"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="166" y="50" width="406" height="20" uuid="0eec6516-a784-4300-9a73-068925d7ccf6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreEmpresa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="49" width="149" height="20" forecolor="#FFFFFF" uuid="d4e69a14-1a49-4902-94af-3c011dde270e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre de la Empresa: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="166" y="71" width="406" height="20" uuid="f3795fe9-7ac6-496f-ba0a-a8c04ca69356"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="71" width="149" height="20" forecolor="#FFFFFF" uuid="b30a248b-257c-4704-a2a5-d3d76d3945c2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dirección de la Empresa:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="584" y="48" width="166" height="20" forecolor="#FFFFFF" uuid="718dfcb5-2660-4397-800b-30f2ef5ac933"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono de la Empresa:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="588" y="74" width="162" height="20" uuid="99391452-37ad-4c8a-9824-c4fd30a99b4d"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="138" y="98" width="421" height="75" uuid="32efd4a9-8c89-44e6-ba69-ad42fbcf9652"/>
+				<subreportParameter name="codEmpresa">
+					<subreportParameterExpression><![CDATA[$P{codEmpresa}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "SubReportePresupuesto.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="0" width="572" height="31" uuid="5759056c-dacb-4690-8561-a1db04767e04"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="0" width="572" height="31" uuid="0381070e-27a8-4442-a19e-cb8de274310b"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="6" width="126" height="20" forecolor="#FFFFFF" uuid="424a4c56-ceb4-4313-9071-f33c160f9fd6"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha del Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="6" width="112" height="20" forecolor="#FFFFFF" uuid="9bd94059-09c0-4efb-bd66-7c2ddc516794"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hora del Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="258" y="6" width="355" height="20" forecolor="#FFFFFF" uuid="10d774b5-5ea4-48ce-8925-aa5f8e871664"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lugar del Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="613" y="6" width="137" height="20" forecolor="#FFFFFF" uuid="93475f0e-fc61-429e-b2d7-8d8cde901bf9"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono del Contacto]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="28" width="572" height="2" uuid="6c023e49-7ab1-4fda-b360-dadf3bcb634d"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="28" width="572" height="2" uuid="582760e4-d1c6-4101-aa53-edc50c29b6b1"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="0" y="4" width="126" height="20" uuid="775049f4-12fa-4dde-8e29-bd5d659a08e6"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaServicio}]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH.mm.ss">
+				<reportElement x="136" y="4" width="112" height="20" uuid="5bec9870-1c8e-48f7-9de6-63da04b9aa66"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaServicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="258" y="4" width="355" height="20" uuid="d86ce03d-a1e6-4bb0-b7ff-9441cdce12b6"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lugarServicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="613" y="4" width="139" height="20" uuid="102ff986-2c7d-4766-9e98-c127de6b10d5"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefonoContacto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="33" splitType="Stretch">
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="0" width="572" height="18" uuid="02e1a894-1d31-4b7d-bc79-0a0936e8f301"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="31" width="572" height="2" uuid="82ac6876-1bdd-4cbe-803a-071ea2ac70b1"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="18" width="752" height="13" forecolor="#000000" backcolor="#FFCC66" uuid="b836a75f-c5ec-401b-82f1-537526154f9d"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="0" width="572" height="18" uuid="a82d273f-8ad3-4d3a-8868-19837f108cfe"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="180" y="31" width="572" height="2" uuid="b3de46e6-b9f3-40a9-a45a-3290813fe2d0"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>

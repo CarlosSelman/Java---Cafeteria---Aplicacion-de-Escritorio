@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.carlosselman.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="416.0" fitWidth="429.0" layoutX="-2.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Logo%20Tony's%20Kinal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="71.0" layoutX="-2.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="71.0" layoutX="66.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="71.0" layoutX="120.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="71.0" layoutX="167.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="71.0" layoutX="210.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="71.0" layoutX="246.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="71.0" layoutX="300.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="99.0" layoutX="350.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="99.0" layoutX="360.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="61.0" layoutY="21.0" prefHeight="25.0" prefWidth="289.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Módulos">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEmpresa" text="Empresas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProducto" text="Productos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoEmpleado" text="TipoEmpleado" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoPlato" text="TipoPlato" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Entidades de Unión">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProductohasPlatos" text="Productos_has_Platos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServiciohasEmpleados" text="Servicios_has_Empleados" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServiciohasPlatos" text="Servicios_has_Platos" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Acerca del...">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="Programador" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

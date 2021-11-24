@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.carlosselman.controller.ServiciohasEmpleadosController">
+   <children>
+      <Pane layoutY="60.0" prefHeight="307.0" prefWidth="737.0" style="-fx-background-color: #DEB887;">
+         <children>
+            <Label layoutX="40.0" layoutY="106.0" text="Lugar Evento">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtLugarEvento" layoutX="150.0" layoutY="102.0" prefHeight="30.0" prefWidth="545.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="41.0" layoutY="27.0" text="Cod. Servicio">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbCodigoServicio" layoutX="150.0" layoutY="22.0" prefHeight="30.0" prefWidth="211.0" />
+            <Label layoutX="41.0" layoutY="67.0" text="Cod. Empleado">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbCodigoEmpleado" layoutX="150.0" layoutY="62.0" prefHeight="30.0" prefWidth="211.0" />
+            <GridPane fx:id="grpFechaEvento" layoutX="497.0" layoutY="26.0" prefHeight="30.0" prefWidth="201.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Label layoutX="377.0" layoutY="28.0" text="Fecha Evento">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="377.0" layoutY="67.0" text="Hora Evento">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtHoraEvento" layoutX="493.0" layoutY="62.0" prefHeight="30.0" prefWidth="201.0" promptText="HH:MM:SS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TableView fx:id="tblServicioshasEmpleados" layoutX="40.0" layoutY="141.0" onInputMethodTextChanged="#seleccionarElementos" onKeyReleased="#seleccionarElementos" onMouseClicked="#seleccionarElementos" prefHeight="146.0" prefWidth="656.0">
+              <columns>
+                <TableColumn fx:id="colCodigoServicio" prefWidth="84.0" text="Cod. Servicio" />
+                <TableColumn fx:id="colCodigoEmpleado" prefWidth="100.0" text="Cod. Empleado" />
+                  <TableColumn fx:id="colFechaEvento" prefWidth="92.0" text="Fecha Evento" />
+                  <TableColumn fx:id="colHoraEvento" prefWidth="94.0" text="Hora Evento" />
+                  <TableColumn fx:id="colLugarEvento" prefWidth="283.0" text="Lugar Evento" />
+              </columns>
+            </TableView>
+         </children></Pane>
+      <ImageView fitHeight="71.0" fitWidth="95.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="95.0" layoutX="93.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="95.0" layoutX="188.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="95.0" layoutX="283.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="95.0" layoutX="378.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="95.0" layoutX="472.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="95.0" layoutX="567.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="101.0" layoutX="642.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnNuevo" layoutX="112.0" layoutY="381.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="30.0" prefWidth="150.0" text="Nuevo">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="480.0" layoutY="381.0" mnemonicParsing="false" onAction="#eliminarServicioHasEmpleados" prefHeight="30.0" prefWidth="150.0" text="Eliminar">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="296.0" layoutY="381.0" mnemonicParsing="false" onAction="#editarServicioHasEmpleados" prefHeight="30.0" prefWidth="150.0" text="Editar">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="61.0" fitWidth="70.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Logo%20Tony's%20Kinal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="95.0" layoutX="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="341.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="98.0" layoutX="531.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="95.0" layoutX="615.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="91.0" layoutY="-7.0" prefHeight="75.0" prefWidth="503.0" text="Servicios_has_Empleados" textFill="#ffe7e7">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="61.0" fitWidth="70.0" layoutX="679.0" onMouseClicked="#ventanaEmpleado" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Empleados.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="70.0" layoutX="615.0" onMouseClicked="#ventanaServicio" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Servicio.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

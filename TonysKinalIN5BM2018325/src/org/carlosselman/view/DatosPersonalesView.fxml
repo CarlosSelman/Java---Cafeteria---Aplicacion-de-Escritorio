@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.carlosselman.controller.DatosPersonalesController">
+   <children>
+      <AnchorPane prefHeight="396.0" prefWidth="297.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="88.0" layoutX="-1.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Logo%20Tony's%20Kinal.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="141.0" layoutX="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="151.0" layoutX="270.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="134.0" layoutX="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="252.0" fitWidth="248.0" layoutX="-1.0" layoutY="86.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/IMGTK_PERFIL.PNG" />
+               </image>
+            </ImageView>
+            <Pane layoutX="197.0" layoutY="86.0" prefHeight="252.0" prefWidth="294.0" style="-fx-background-color: #DEB887;" />
+            <ImageView fitHeight="59.0" fitWidth="134.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="134.0" layoutX="88.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="134.0" layoutX="173.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="134.0" layoutX="259.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="102.0" layoutX="348.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="86.0" layoutY="6.0" prefHeight="75.0" prefWidth="325.0" text="DATOS PERSONALES" textFill="#ffe7e7">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="86.0" fitWidth="88.0" layoutX="404.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Logo%20Tony's%20Kinal.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="92.0" layoutX="399.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Fondo%20Tony's%20Kinal.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="206.0" layoutY="94.0" prefHeight="233.0" prefWidth="274.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <Pane layoutX="14.0" layoutY="167.0" prefHeight="52.0" prefWidth="246.0" style="-fx-background-color: #B22222;">
+                     <children>
+                        <Label layoutX="29.0" layoutY="-11.0" prefHeight="75.0" prefWidth="221.0" text="PROGRAMADOR" textFill="#ffe7e7">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="56.0" layoutY="14.0" text="Carlos Andrés ">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="49.0" text="Selman David">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="84.0" layoutY="84.0" text="2018-325">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="98.0" layoutY="117.0" text="IN5BM">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

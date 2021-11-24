@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SubreporteDelDetalleDeServicioFinal" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eb8c8a98-cc95-42a6-bf65-2c40f20fbe24">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codServicio" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[call sp_ListarSubreportedeProductosparaServicios($P{codServicio})]]>
+	</queryString>
+	<field name="nombreProducto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cantidad" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<image scaleImage="Clip" hAlign="Left">
+				<reportElement x="0" y="0" width="523" height="24" forecolor="#FFFFFF" uuid="6c170d33-d910-4f5a-8eda-2cd097eb430a"/>
+				<imageExpression><![CDATA["C:\\Users\\Carlos Andrés\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018325\\src\\org\\carlosselman\\img\\Fondo Tony's Kinal.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="10" y="4" width="159" height="20" forecolor="#FFFFFF" uuid="728cbff7-78ac-4a7e-9498-5c88adca836d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre De los Productos:]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="37" y="2" width="486" height="20" uuid="b0e70e9d-163b-4a65-8eb6-aa76102b319c"/>
+				<textFieldExpression><![CDATA[$F{nombreProducto}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="0" width="25" height="20" uuid="754b280c-0473-42ee-b5dc-6deec585bd96"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
